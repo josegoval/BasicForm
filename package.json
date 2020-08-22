@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "webpack --mode development",
     "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production",
     "eslint": "eslint --init"
   },
   "devDependencies": {
