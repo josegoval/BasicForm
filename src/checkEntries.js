@@ -1,12 +1,11 @@
 import {
-  checkLetters,
   checkLettersAndSpaces,
   checkLettersAndUnderscores,
   checkPassword,
 } from "./utils/textChecker";
 
 window.checkFirstname = function () {
-  const text = document.getElementById("firstname").value;
+  const text = document.getElementById("firstname").value.trim();
   const err = document.getElementById("firstnameError");
 
   if (!checkLettersAndSpaces(text)) {
@@ -18,7 +17,7 @@ window.checkFirstname = function () {
 };
 
 window.checkLastname = function () {
-  const text = document.getElementById("lastname").value;
+  const text = document.getElementById("lastname").value.trim();
   const err = document.getElementById("lastnameError");
 
   if (!checkLettersAndSpaces(text)) {
@@ -30,7 +29,7 @@ window.checkLastname = function () {
 };
 
 window.checkUsername = function () {
-  const text = document.getElementById("username").value;
+  const text = document.getElementById("username").value.trim();
   const err = document.getElementById("usernameError");
 
   if (!checkLettersAndUnderscores(text)) {
@@ -42,7 +41,7 @@ window.checkUsername = function () {
 };
 
 window.checkPassword = function () {
-  const text = document.getElementById("password").value;
+  const text = document.getElementById("password").value.trim();
   const err = document.getElementById("passwordError");
 
   if (!checkPassword(text)) {
