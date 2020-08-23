@@ -58,7 +58,10 @@
         oninput="checkConfirmPassword()"
       /><br />
       <p id="confirmPasswordError" class="feedback_error"></p>
-      <button onclick="sendForm()">Submit</button>
+      <!-- Submit -->
+      <button onclick="sendForm()" disabled id="submitButton">
+        Submit
+      </button>
     </div>
     <p class="feedback_error">Entries with (*) symbol are required.</p>
     <!-- Scripts -->
