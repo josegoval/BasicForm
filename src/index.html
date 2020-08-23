@@ -8,41 +8,56 @@
   <body>
     <h1>Register Form</h1>
     <div id="Register Form">
+      <!-- firstname -->
       <label for="firstname">First name:</label>
       <input
         type="text"
         id="firstname"
         name="firstname"
         placeholder="Your first name"
+        oninput="checkFirstname()"
       /><br />
+      <p id="firstnameError" class="feedback_error"></p>
+      <!-- lastname -->
       <label for="lastname">Last name:</label>
       <input
         type="text"
         id="lastname"
         name="lastname"
         placeholder="Your last name"
+        oninput="checkLastname()"
       /><br />
+      <p id="lastnameError" class="feedback_error"></p>
+      <!-- username -->
       <label for="username">Username*:</label>
       <input
         type="text"
         id="username"
         name="username"
         placeholder="Your username"
+        oninput="checkUsername()"
       /><br />
+      <p id="usernameError" class="feedback_error"></p>
+      <!-- password -->
       <label for="password">Password*:</label>
       <input
         type="password"
         id="password"
         name="password"
         placeholder="Your password"
+        oninput="(() => {checkPassword(); checkConfirmPassword();})()"
       /><br />
+      <p id="passwordError" class="feedback_error"></p>
+      <!-- confirm password -->
       <label for="confirmPassword">Confirm password*:</label>
       <input
         type="password"
         id="confirmPassword"
         name="confirmPassword"
         placeholder="Confirm your password"
+        oninput="checkConfirmPassword()"
       /><br />
+      <p id="confirmPasswordError" class="feedback_error"></p>
       <button onclick="sendForm()">Submit</button>
     </div>
     <p class="feedback_error">Entries with (*) symbol are required.</p>

@@ -1,0 +1,15 @@
+1. ¿A que se debe el AddEventListener? ¿No se supone que una vez que 
+agregas la etiqueta "onclick" u otras, automáticamente, ya tiene 
+asociado un EventListener?
+
+2. Si no importo el archivo js que utilizo en el html en el
+index.js no lo reconoce ¿Por qué? ¿Hay alguna forma de automatizarlo?
+
+3. Al tratar de utilizar una funcion de checkEntries en el index.html
+decía que no lo encontraba. Finalmente tuve que añadirlo a una variable
+global en window. No he entendido muy bien el por qué de esto.
+
+4. Cuando veo un archivo amplio lleno de funciones, no puedo evitar
+sentirme un poco abrumado por la densidad. Por ejemplo en checkEntries.js
+me cuesta verlo todo de forma global. ¿Se puede hacer algo respecto a eso
+o es más una sensación particular?
